@@ -1,0 +1,236 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdbc00;
+    overflow: hidden; /* Hide default scrollbars */
+}
+
+.logo-head{
+    display: none;
+}
+.background-images {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('background-left.jpg'), url('background-right.jpg');
+    background-position: left top, right top,left;
+    background-size: 50% 100%, 50% 100%;
+    background-repeat: repeat;
+}
+.uni-head{
+    display: none;
+}
+.profile-image {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.container {
+    position: fixed;
+    height: 90vh;
+    width: 58%;
+    margin: 5vh auto;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    border-bottom-left-radius: 80px;
+    background-color: white;
+    box-shadow: 0px 0px 10px;
+}
+
+.left-panel{
+    height: 85vh;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #2a2f42;
+    padding: 30px;
+    border-radius: 10px;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 70px;
+
+}
+.right-panel {
+    background-color: white;
+    padding: 30px;
+    height: 70vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color:  #2a2f42 whitesmoke;
+}
+.carousel-inner img {
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.form-head h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.custom-select-wrapper {
+    position: relative;
+}
+
+.college-dropdown {
+    appearance: none;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.carousel-container
+{
+    margin-top: 50%;
+}
+#college-type{
+    font-size:smaller;
+    padding: 8px;
+    opacity: 0.8;
+}
+.asterik {
+    color: red;
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+.btn-primary{
+    width: 100%;
+    background-color: #2a2f42;
+}
+
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+@media (max-width: 900px) {
+    .logo-head{
+        display: block;
+        display: flex;
+        border-radius: 7px;
+        align-items: center;
+        justify-content: center;
+        background-color:  #2a2f42 ;
+    }
+    .left-container{
+        display: none;
+    }
+    .right-container{
+        width: 100%;
+    }
+    .university-heading{
+        margin-top: 15px;
+    }
+    .container{
+        width: 100%;
+    }
+ 
+}
+@media (max-width: 577px) {
+    body{
+        background-color: white;
+    }
+    .container{
+        width: 100%;
+    }
+    .form-head{
+        position: fixed;
+        top: 5px;
+    }
+    .logo-head{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        background-color:  #2a2f42 ;
+        border-radius: 0px;
+    }
+    .form-check-input{
+        margin-top: 10px;
+    }
+    .university-heading{
+      display: none;
+    }
+    .uni-head{
+        display: block;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size:larger;
+    }
+    .form-head{
+        background-color: white;
+        position: fixed;
+        top:-1px;
+        padding: 15px;
+    }
+    .container{
+        width:100%;
+        padding: 12px;
+        border-radius:2px ;
+        height: 100%;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #007bff #f8f9fa;
+    }
+    label{
+        margin-top: 7px;
+    }
+    .background-images{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .form-group {
+        margin-bottom: 0px;
+    }
+    .right-panel {
+        margin: 0px;
+        padding-top: 0px;
+        height: 90%;
+        width: 100%;
+    }
+   
+}

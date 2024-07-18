@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-images"></div>
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-5">
+                <div id="carouselExampleIndicators" class="carousel slide left-panel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://forgealumnus.com/storage/uploads/landing_header_main_images/1712676069_DSC_0428.JPG" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://forgealumnus.com/uploads/banners/1692641740_DPS_07051.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://forgealumnus.com/uploads/banners/1696831767_IMG_5624.jpg"  class="d-block w-100" alt="Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="right-panel">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="college" role="tabpanel" aria-labelledby="college-tab">
+                            <form class="row fw-normal needs-validation" novalidate>
+                                <div class="form-head form-group mb-3 mt-2">
+                                    <h3>UNIVERSITY REGISTRATION</h3>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="name">College Name <sup class="asterik">*</sup></sup></label>
+                                    <input type="text" id="name" class="form-control" name="name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide the college name.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="college-website">College Website <sup class="asterik">*</sup></label>
+                                    <input type="url" id="college-website" class="form-control" name="college-website" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid URL.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="college-email">College Email <sup class="asterik">*</sup></label>
+                                    <input type="email" id="college-email" class="form-control" name="college-email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="college-phone">College Phone <sup class="asterik">*</sup></label>
+                                    <input type="tel" id="college-phone" name="college-phone" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid phone number.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="college-location">College Location <sup class="asterik">*</sup></label>
+                                    <input type="text" id="college-location" name="college-location" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Please provide the college location.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="college-type">College Type <sup class="asterik">*</sup></label>
+                                    <div class="custom-select-wrapper">
+                                        <select id="college-type" class="college-dropdown form-control" required>
+                                            <option value="" disabled selected>Select College Type</option>
+                                            <option value="university">University</option>
+                                            <option value="institution">Institution</option>
+                                            <option value="autonomous">Autonomous</option>
+                                        </select>
+                                        <i class="fa fa-chevron-down dropdown-icon"></i>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please select a college type.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="about">About College <sup class="asterik">*</sup></label>
+                                    <textarea id="about" name="about" class="form-control" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide information about the college.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="offer-detail">Please detail your offer/discount here. Include details about the amount of the discount, what it covers, and how to receive it.</label>
+                                    <textarea id="offer-detail" name="offer-detail" class="form-control" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide offer details.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <h6 class="fw-lighter">COLLEGE REPRESENTATIVE INFORMATION</h6>
+                                    <p>(This information is for internal use only and will not be shared on our website.)</p>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="first-name">First Name <sup class="asterik">*</sup></label>
+                                    <input type="text" id="first-name" class="form-control" name="first-name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide the first name.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="last-name">Last Name <sup class="asterik">*</sup></label>
+                                    <input type="text" id="last-name" name="last-name" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Please provide the last name.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="title">Designation <sup class="asterik">*</sup></label>
+                                    <input type="text" id="title" class="form-control" name="title" required>
+                                    <div class="invalid-feedback">
+                                        Please provide the designation.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="email">Email ID <sup class="asterik">*</sup></label>
+                                    <input type="email" id="email" class="form-control" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="phone">Phone <sup class="asterik">*</sup></label>
+                                    <input type="tel" id="phone" class="form-control" name="phone" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid phone number.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="mou">Upload MOU<sup class="asterik">*</sup></label>
+                                    <input type="file" id="mou" name="mou" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Please upload the MOU.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="logo">Upload Logo<sup class="asterik">*</sup></label>
+                                    <input type="file" id="logo" class="form-control" name="logo" required>
+                                    <div class="invalid-feedback">
+                                        Please upload the logo.
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3 col-md-12">
+                                    <label for="refer-by">Referred By</label>
+                                    <input type="text" id="refer-by" class="form-control" name="refer-by" required>
+                                    <div class="invalid-feedback">
+                                        Please provide the referral information.
+                                    </div>
+                                </div>
+                                <button type="submit" class="col-md-12 btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center mt-3">Already have an account? <a href="#">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
