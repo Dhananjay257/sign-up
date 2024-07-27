@@ -40,7 +40,7 @@ textarea::placeholder
 .container {
   
     height: 90vh ;
-    max-height: 660px;
+    min-height: 660px;
     width: 70vw;
     margin: 5vh auto;
     border-radius: 6px;
