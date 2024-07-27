@@ -37,12 +37,11 @@ textarea::placeholder
 }
 
 /* Container and Panels */
-.container {
-  
+
+.custom-container {
     height: 90vh ;
-    min-height: 660px;
+    /* max-height: 660px; */
     width: 70vw;
-    margin: 5vh auto;
     border-radius: 6px;
     background-color:white;
     box-shadow: 0px 0px 3px;
@@ -112,13 +111,6 @@ textarea::placeholder
     font-size: small;
 }
 
-
- 
-
-  /* .carousel-item {
-    text-align: center;
-  } */
-  
   .carousel-item img {
     display: inline-block;
     max-height: 500px;
@@ -126,16 +118,9 @@ textarea::placeholder
     margin-bottom: 110px;
     border-radius: 10px;
     opacity: 30;
-    /* margin-left: 2px; */
   }
 
-/* .left-container {
-    padding-right: 1rem;
-} */
-
-
 .right-container {
-    /* display: none; */
     padding-left: 1rem;
     background-color: white;
 }
@@ -257,11 +242,6 @@ label{
 
 
 /* Responsive Styling */
-/* @media (max-width: 953px) {
-    .form-navigation{
-        position: relative;
-    } 
-} */
 
 
 @media (max-width: 1286px) {
@@ -275,14 +255,14 @@ label{
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .mob-logo{
         display: flex;
         justify-content: flex-start;
         width: 44px;
         height: 45px;
     }
-    .container{
+    .custom-container{
         height: 100%;
         width: 100%;
         overflow-y: auto;
@@ -316,7 +296,7 @@ label{
         margin: 0px;
         padding: 0px;
     }
-    .container{
+    .custom-container {
         margin: 0px;
         padding: 0px;
         height: 100%;
@@ -348,7 +328,7 @@ label{
         margin: 0px;
         padding: 0px;
     }
-    .container{
+    .custom-container {
         margin: 0px;
         padding: 0px;
         height: 100%;
@@ -366,11 +346,6 @@ label{
 }
 
 @media (max-height: 700px) {
-    .container{
-        overflow: auto;
-        overflow-x: hidden;
-        width: 80%;
-    }
 
     
     .left-container{
@@ -408,5 +383,6 @@ label{
     }
 
     }
+
 
     
