@@ -24,6 +24,7 @@ function validateForm() {
     let valid = true;
     let inputs = document.getElementsByClassName("step")[currentStep].getElementsByTagName("input");
     let selects = document.getElementsByClassName("step")[currentStep].getElementsByTagName("select");
+    // let textareas = document.getElementsByClassName("step")[currentStep].getElementsByTagName("textarea");
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value === "") {
             inputs[i].className += " is-invalid";
